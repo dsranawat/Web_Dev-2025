@@ -76,23 +76,6 @@ All 17 projects will be added to my personal **Portfolio Website** at the end of
 
 ---
 
-## 📌 Repository Structure
-
-Each project resides in its own subfolder within this repo:
-
-Web_Dev/
-├── Day1_Basic/
-│ ├── portfolio-website/
-│ ├── weather-app/
-│ └── ...
-├── Day2_Intermediate/
-├── Day3_Advanced/
-├── Day4_Major/
-└── README.md
-
-
----
-
 ## 📫 Contact
 
 For feedback, collaborations, or questions:
