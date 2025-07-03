@@ -1,0 +1,59 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.todo-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+input {
+    padding: 0.5rem;
+    width: 70%;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+li {
+    background: #e0f7fa;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+    background: #c8e6c9;
+}
+
+.delete-btn {
+    background: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
