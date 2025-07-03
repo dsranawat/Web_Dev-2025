@@ -1,0 +1,149 @@
+:root {
+  --bg: #f2f2f2;
+  --text: #222;
+  --input-bg: #fff;
+  --border: #ccc;
+  --you-bg: #4caf50;
+  --bot-bg: #e0e0e0;
+  --message-color: white;
+}
+
+.dark-mode {
+  --bg: #121212;
+  --text: #eee;
+  --input-bg: #1e1e1e;
+  --border: #444;
+  --you-bg: #2e8b57;
+  --bot-bg: #333;
+  --message-color: #eee;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: var(--input-bg);
+  border-bottom: 1px solid var(--border);
+  padding: 0.8rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.chat-container {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.message {
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  max-width: 70%;
+  font-size: 0.95rem;
+  position: relative;
+}
+
+.you {
+  align-self: flex-end;
+  background-color: var(--you-bg);
+  color: var(--message-color);
+}
+
+.bot {
+  align-self: flex-start;
+  background-color: var(--bot-bg);
+  color: var(--text);
+}
+
+.timestamp {
+  font-size: 0.7rem;
+  margin-top: 2px;
+  text-align: right;
+  opacity: 0.6;
+}
+
+.typing-indicator {
+  display: none;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  color: gray;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background-color: var(--input-bg);
+  color: var(--text);
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--you-bg);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .message {
+    max-width: 90%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    margin-top: 0.5rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

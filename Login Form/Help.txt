@@ -1,0 +1,23 @@
+📘 Help Guide – Login Form with Validation
+
+This is a frontend-only login form built using HTML, CSS, and JavaScript. It includes all basic and advanced validation features.
+
+✅ Features Included:
+- Required field check for email and password
+- Email format validation
+- Password length check (min 6)
+- Password strength meter (weak, medium, strong)
+- Show/hide password toggle
+- Remember Me checkbox (UI only)
+- Dark mode toggle
+- Feedback message for successful login
+
+🚀 How to Run:
+1. Open this project folder in VS Code
+2. Right-click on index.html → Click “Open with Live Server”
+3. Try entering incorrect and correct inputs to test validations
+
+💡 Note:
+This is a UI-only project. No backend is connected.
+
+– Project by dsranawat

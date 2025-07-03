@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Search App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Recipe Search</h1>
+    <button id="darkToggle">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Search for recipes..." required />
+      <select id="cuisineFilter">
+        <option value="">All Cuisines</option>
+        <option value="indian">Indian</option>
+        <option value="italian">Italian</option>
+        <option value="chinese">Chinese</option>
+        <option value="mexican">Mexican</option>
+      </select>
+      <button type="submit">Search</button>
+      <button type="button" id="resetBtn">Reset</button>
+    </form>
+
+    <div class="loader" id="loader" style="display: none;"></div>
+    <div id="message"></div>
+    <div class="results" id="resultsContainer"></div>
+    <button id="loadMoreBtn" style="display:none;">Load More</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

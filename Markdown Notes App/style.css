@@ -1,0 +1,112 @@
+:root {
+  --bg: #f5f5f5;
+  --text: #222;
+  --area-bg: #fff;
+  --border: #ccc;
+  --preview-bg: #fdfdfd;
+  --button-bg: #4CAF50;
+  --button-color: white;
+}
+
+.dark-mode {
+  --bg: #121212;
+  --text: #eee;
+  --area-bg: #1f1f1f;
+  --border: #333;
+  --preview-bg: #1e1e1e;
+  --button-bg: #2e8b57;
+  --button-color: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--area-bg);
+  border-bottom: 1px solid var(--border);
+}
+
+h1 {
+  margin: 0;
+}
+
+#darkToggle {
+  font-size: 1.1rem;
+  background: var(--button-bg);
+  color: var(--button-color);
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.editor-container {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  height: 100%;
+}
+
+textarea {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  background-color: var(--area-bg);
+  color: var(--text);
+  resize: none;
+}
+
+.preview {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  background-color: var(--preview-bg);
+  overflow-y: auto;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button-group button {
+  padding: 0.5rem 1rem;
+  background-color: var(--button-bg);
+  color: var(--button-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .editor-container {
+    flex-direction: column;
+  }
+
+  .preview, textarea {
+    height: 300px;
+  }
+}

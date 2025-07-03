@@ -1,0 +1,24 @@
+📘 Help Guide – Chat UI (Frontend Only)
+
+This is a responsive frontend chat UI with dummy messages and all essential features.
+
+✅ Features:
+- Message layout with bubble styles (incoming/outgoing)
+- Dummy send message and reply
+- Timestamps for each message
+- User switcher (You / Bot)
+- Typing indicator animation
+- Scrolls to latest message
+- Responsive for mobile devices
+- Dark mode toggle (top-right)
+- Header with user avatar and name
+
+🚀 How to Use:
+1. Open in Live Server (for full layout support)
+2. Type a message and click "Send"
+3. Switch user with the dropdown
+4. Watch dark mode toggle, typing, and timestamp effects
+
+📌 Note: This is a static project with no backend logic.
+
+– Project by dsranawat

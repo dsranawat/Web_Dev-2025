@@ -1,0 +1,33 @@
+📘 Help Guide – Recipe Search App
+
+This project allows you to search for recipes using the Spoonacular API. It includes features like filters, pagination, dark mode, and a mobile-friendly design.
+
+⚠️ Note:
+Browsers block API fetches in local files when opened via file:// path.
+
+✅ How to Run This Project Locally:
+
+Option 1 – Using Live Server in VS Code (Recommended):
+1. Open this folder in Visual Studio Code
+2. Install the "Live Server" extension (by Ritwick Dey)
+3. Right-click on index.html → Click "Open with Live Server"
+4. The browser will open at http://127.0.0.1:5500/
+5. Search for any recipe and explore the features
+
+🧪 API Key Setup:
+1. Go to https://spoonacular.com/food-api and sign up
+2. Copy your API key
+3. In `script.js`, replace:
+   const API_KEY = "YOUR_API_KEY";
+   with your actual key (inside quotes)
+
+🔧 Features Implemented:
+- Recipe search by name
+- Cuisine filter (Indian, Italian, etc.)
+- Load more results (pagination)
+- Loading spinner while fetching
+- Reset button to clear results
+- Dark mode toggle 🌙
+- Responsive mobile layout
+
+– Project by dsranawat

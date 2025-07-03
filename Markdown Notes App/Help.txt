@@ -1,0 +1,21 @@
+📘 Help Guide – Markdown Notes App
+
+This app allows you to type markdown and see the live preview side-by-side.
+
+✅ Features Included:
+- Live markdown preview
+- Download as .md file
+- Clear all notes button
+- Copy to clipboard
+- Save notes in local storage (auto load on refresh)
+- Dark mode toggle (top-right corner)
+- Responsive layout for mobile and desktop
+
+🔧 How to Use:
+1. Open index.html in a browser using Live Server (not file://)
+2. Type markdown in the left pane
+3. Preview renders live on the right
+4. Use buttons below to download, copy, or clear
+5. Your data is saved in the browser (localStorage)
+
+– Project by dsranawat

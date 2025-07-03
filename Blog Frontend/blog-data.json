@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "What is JavaScript?",
+    "summary": "JavaScript is a programming language used to make web pages interactive.",
+    "content": "JavaScript is a dynamic language used for web development, games, and apps. It runs in the browser and on the server using Node.js."
+  },
+  {
+    "id": 2,
+    "title": "Intro to React",
+    "summary": "React is a JavaScript library for building user interfaces.",
+    "content": "React allows developers to build reusable UI components. It uses a virtual DOM and works great for SPAs."
+  },
+  {
+    "id": 3,
+    "title": "Understanding APIs",
+    "summary": "APIs allow different software components to communicate with each other.",
+    "content": "APIs enable interaction between different software services. They define protocols for requests and responses, typically over HTTP."
+  }
+]

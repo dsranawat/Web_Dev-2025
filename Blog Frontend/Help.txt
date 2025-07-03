@@ -1,0 +1,41 @@
+📘 Help Guide – Blog Frontend Project
+
+If you're trying to run this project locally and the blog posts are not loading, please read this:
+
+❗ Why it doesn't work by default:
+Browsers block fetch() from loading local JSON files via the file:// protocol for security reasons.
+
+✅ How to fix it:
+
+OPTION 1 – Use Live Server (VS Code):
+1. Open this folder in Visual Studio Code
+2. Install the 'Live Server' extension (if not installed)
+3. Right-click on index.html → Click 'Open with Live Server'
+4. Your browser will open at http://127.0.0.1:5500/
+5. Blog posts will now load properly
+
+OPTION 2 – Use Python Simple HTTP Server:
+1. Open a terminal in the project directory
+2. Run:
+   python -m http.server 8000
+3. Visit: http://localhost:8000/index.html
+
+OPTION 3 – Use Node.js http-server:
+1. Run:
+   npm install -g http-server
+2. Then:
+   http-server
+3. Visit: http://localhost:8080 (or the provided link)
+
+📂 Project Files:
+- index.html → Blog list page
+- post.html → Detailed view for a single post
+- blog-data.json → JSON file simulating blog API
+- script.js → Loads blog cards
+- post.js → Loads single post based on URL ID
+
+💡 Tip:
+This project uses static JSON to simulate an API.
+To use real data, connect it to a backend or REST API.
+
+– Created by dsranawat

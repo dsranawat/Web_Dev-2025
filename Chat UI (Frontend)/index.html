@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="user-info">
+      <img src="https://i.pravatar.cc/40" alt="User Avatar" class="avatar">
+      <span class="username">ChatBot</span>
+    </div>
+    <div class="actions">
+      <select id="userSwitcher">
+        <option value="You">You</option>
+        <option value="Bot">Bot</option>
+      </select>
+      <button id="darkToggle">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="chat-container" id="chatContainer"></div>
+
+    <div class="typing-indicator" id="typingIndicator">Typing...</div>
+
+    <form id="chatForm">
+      <input type="text" id="messageInput" placeholder="Type a message..." required />
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
