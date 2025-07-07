@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# dotenv environment files
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+/build
+/dist
+
+# React build
+client/build
+
+# Coverage reports
+coverage/
+
+# Optional:
+*.local
+.vscode/
+.idea/
